@@ -1,0 +1,30 @@
+{
+  "segment": [
+    {
+      "keywords": ["set up source", "add source", "configure source", "new source"],
+      "answer": "**To set up a new source in Segment:**\n1. Log in to your Segment dashboard.\n2. Click on 'Sources' in the left menu.\n3. Select '+ Add Source'.\n4. Choose your platform (e.g., Shopify, WordPress).\n5. Follow the installation wizard to inject the snippet into your website code."
+    },
+    {
+      "keywords": ["user profile", "identify user", "create profile"],
+      "answer": "**To create/update a user profile in Segment:**\nUse the `analytics.identify()` method. Example:\nanalytics.identify('userId', {\n  email: 'john@example.com',\n  name: 'John Doe'\n});\nThis creates or updates the profile associated with that user ID."
+    }
+  ],
+  "mparticle": [
+    {
+      "keywords": ["track event", "log event", "custom event"],
+      "answer": "**To track an event in mParticle:**\n1. Initialize the SDK in your app.\n2. Use `MParticles.EventTypes.Purchase` or a custom string.\n   ```java\n   EventBuilder builder = new EventBuilder(\"CustomEvent\", EventCategory.Custom);\n   builder.addAttribute(\"key\", \"value\");\n   MParticles.getInstance().logEvent(builder.build());\n   ```"
+    }
+  ],
+  "lytics": [
+    {
+      "keywords": ["audience segment", "build audience", "create segment"],
+      "answer": "**To build an audience segment in Lytics:**\n1. Navigate to 'Audiences' > 'Create New'.\n2. Use the visual drag-and-drop builder or SQL editor.\n3. Define criteria (e.g., Email Domain ends with '@company.com').\n4. Save and publish the audience to sync with your activation channels."
+    }
+  ],
+  "zeotap": [
+    {
+      "keywords": ["data integration", "connect data source", "zeotap setup"],
+      "answer": "**To integrate data sources in Zeotap:**\n1. Go to the 'Integration Hub'.\n2. Select your source type (Web, Mobile, CRM).\n3. Provide API credentials or install the SDK.\n4. Map fields to Zeotap’s Unified Identity Model for seamless customer profiling."
+    }
+  ]
+}
